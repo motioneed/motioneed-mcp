@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.motioneed/motioneed",
+  "title": "Motioneed",
+  "description": "Turn a product URL into a launch or demo video (MP4) with real UI, music and optional voiceover.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.motioneed.com/developers",
+  "repository": { "url": "https://github.com/motioneed/motioneed-mcp", "source": "github" },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.motioneed.com/mcp",
+      "headers": [
+        { "name": "Authorization", "description": "Bearer mk_... API key from motioneed.com/developers", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}
